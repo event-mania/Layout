@@ -1,0 +1,66 @@
+.carousel {
+    width: 100%;
+    max-height: 600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    .slide {
+        display: none;
+        .img {
+            width: 100%;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+        }
+        .img1 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("../images/carousel1.jpg");
+        }
+        .img2 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("../images/carousel2.jpg");
+        }
+        .img3 {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("../images/carousel3.jpg");
+        }
+
+        .text {
+            font-family: 'Krona One', sans-serif;
+            color: $white;
+            font-size: 2em;
+            position: absolute;
+            padding: 12px;
+            left: 20px;
+            bottom: 20px;
+            width: 100%;
+        }
+    }
+    .fade {
+        animation: fade 1s;
+    }
+    .previous, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        background: rgba(0,0,0,0.15);
+        color: $white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.1s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        &:hover {
+            background: rgba(0,0,0,0.3);
+        }
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+@keyframes fade {
+    from { opacity: .6;}
+    to { opacity: 1;}
+}

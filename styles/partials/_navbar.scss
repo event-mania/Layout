@@ -1,0 +1,38 @@
+.navbar {
+    background: $navbarcolor;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    color: $white;
+    .title {
+        font-size: 2em;
+        padding: 20px;
+    }
+}
+.nav-links {
+    text-align: center;
+    list-style: none;
+    background: rgb(40, 40, 40);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    .nav-link {
+        display: inline-block;
+        transition: 0.1s;
+        a {
+            display: inline-block;
+            color: $white;
+            text-decoration: none;
+            padding: 12px 20px;
+            &:hover {
+                background: rgb(20, 20, 20);
+            }
+        }
+    }
+    .active {
+        background: rgb(0, 93, 187);
+        a{
+            &:hover {
+                background: rgb(1, 58, 114);
+            }
+        }
+    }
+}

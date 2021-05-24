@@ -1,0 +1,96 @@
+@import './partials/root';
+@import './partials/navbar';
+body{
+	background: rgba(0,0,0,0.1);
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+.container {
+	border-radius: 20px;
+	width: 700px;
+	margin: 80px auto;
+	padding: 60px 40px;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	transition: 0.1s;
+	.title {
+		text-align: center;
+	}
+	.cred_form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		label {
+			padding: 0 8px;
+			margin-top: 12px;
+			font-size: 12px;
+		}
+		.textinput {
+			// margin-top: 20px;
+			padding: 8px 12px;
+			border: 0;
+			outline: 0;
+			border-bottom: 2px solid transparent;
+			background: rgb(240, 240, 240);
+			&:focus {
+				border-bottom: 2px solid rgba(0,0,0,0.6);
+			}
+		}
+		.warning {
+			margin-left: 8px;
+			margin-top: 4px;
+			font-size: 12px;
+			color: #f00;
+		}
+		.form-options {
+			margin-top: 8px;
+			display: flex;
+			justify-content: space-between;
+			.forgot_pass {
+				text-decoration: none;
+				color: rgb(60, 0, 255);
+			}
+			.form-part {
+				flex: 1;
+				&:first-child {
+					margin-right: 20px;
+				}
+				label {
+					padding: 0 8px;
+					margin-top: 12px;
+					font-size: 12px;
+				}
+				input {
+					margin-top: 4px;
+					width: 100%;
+				}
+			}
+		}
+		.submitbtn {
+			margin: 20px 0;
+			padding:10px;
+			border-radius: 4px;
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #fff;
+			background: rgb(0, 142, 236);
+			cursor: pointer;
+			border: 0;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+		border-radius: 0;
+	}
+}
+
+
+@import './partials/footer';

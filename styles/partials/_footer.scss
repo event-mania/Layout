@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgb(40, 40, 40);
+    // margin-top: 30px;
+    color: #fff;
+    
+    .left-footer {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        .text {
+            margin-top: 12px;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        .title a {
+            color: $white;
+        }
+        .social-container {
+            .sociallist {
+                list-style: none;
+                margin-top: 12px;
+                .social {
+                    display: inline-block;
+                    margin-right: 12px;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .implinks {
+        flex: 1;
+        max-width: 250px;
+        padding: 20px ;
+        .footerlinks {
+            list-style: none;
+            .links {
+                padding: 12px 0;
+                a {
+                color: #fff;
+                margin-bottom: 12px;
+                text-decoration: none;
+                position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 30px;
+                        transform: scaleX(0);
+                        height: 3px;
+                        bottom: -4px;
+                        left: 0;
+                        background: #f00;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+                    &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: left;
+        .implinks {
+            padding: 0 20px;
+        }
+    }
+    
+}

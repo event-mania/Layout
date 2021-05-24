@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #313131;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.navbar .title {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.nav-links {
+  text-align: center;
+  list-style: none;
+  background: #282828;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.nav-links .nav-link {
+  display: inline-block;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.nav-links .nav-link a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+
+.nav-links .nav-link a:hover {
+  background: #141414;
+}
+
+.nav-links .active {
+  background: #005dbb;
+}
+
+.nav-links .active a:hover {
+  background: #013a72;
+}
+
+.formarea {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.formarea .circle1 {
+  position: absolute;
+  top: -75px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #ff1a85;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.formarea .circle2 {
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff1a85;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.formarea form .formoption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.formarea form .formoption label {
+  font-size: 13px;
+}
+
+.formarea form .formoption input, .formarea form .formoption textarea {
+  padding: 8px;
+  border: 0;
+  outline: 0;
+  border: 1px solid #b4b4b4;
+}
+
+.formarea form .formoption input:focus, .formarea form .formoption textarea:focus {
+  border: 1px solid #ff0e7e;
+}
+
+.formarea form .formoption textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #444;
+  height: 100px;
+}
+
+.formarea form .formoption .warning {
+  font-size: 13px;
+  color: #f00;
+}
+
+.formarea form .btngroup {
+  margin-top: 20px;
+}
+
+.formarea form .btngroup .btn {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.formarea form .btngroup .sub {
+  margin-right: 20px;
+  padding: 10px 22px;
+  background: #ff1a85;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px rgba(255, 26, 133, 0.5);
+          box-shadow: 0 0 5px rgba(255, 26, 133, 0.5);
+}
+
+.formarea .note {
+  margin-top: 20px;
+  padding: 8px;
+  border-left: 5px solid #00a11b;
+  background: rgba(26, 255, 102, 0.2);
+}
+
+.formarea .note:empty {
+  background: red;
+}
+/*# sourceMappingURL=contact.css.map */
